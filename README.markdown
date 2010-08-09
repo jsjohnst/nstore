@@ -18,7 +18,7 @@ Creating a database is easy, you just call the nStore function to generate a col
 To insert/update documents, just call the save function on the collection.
 
     // Insert a new document with key "creationix"
-    users.save("creationix", {name: "Tim Caswell": age: 28}, function (err) {
+    users.save("creationix", {name: "Tim Caswell", age: 28}, function (err) {
         if (err) { throw err; }
         // The save is finished and written to disk safely
     });
